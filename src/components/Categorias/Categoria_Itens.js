@@ -19,8 +19,6 @@ Categorias_Geral.forEach((item) => {
     if (item.Nome == sub_item.Categoria) {
       item.Quantia_De_Itens = sub_item.Produtos.length;
     }
-    console.log(item);
-    console.log(sub_item);
   });
 });
 
