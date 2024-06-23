@@ -1,0 +1,59 @@
+.logo-d {
+  width: 130px;
+  object-fit: cover;
+}
+
+.text-wrapper {
+  display: flex;
+  width: 100%;
+  background-color: rgb(21010, 21010, 21010);
+  z-index: 100;
+  margin-top: -32px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-wrapper div {
+  display: flex;
+}
+
+.promocoes-d {
+  width: 100%;
+  height: 33px;
+}
+
+.promocoes-e {
+  width: 100%;
+  height: 33px;
+}
+
+.Movimento_De_Sumir {
+  animation: Movimento_De_Sumir 5s linear infinite;
+}
+
+@keyframes Movimento_De_Sumir {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translate(-200%);
+  }
+}
+
+.Movimento_De_Aparicao {
+  position: relative;
+  left: -10px;
+  animation: Movimento_De_Aparicao 5s linear infinite;
+}
+
+@keyframes Movimento_De_Aparicao {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}

@@ -1,0 +1,62 @@
+/* Seção de Estilização do Banner de Apresentações */
+.Imagens_De_Apresentacoes {
+  height: 32.24vw;
+  width: 96.46vw;
+  border-radius: 3vw;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translate(-50%, 140px);
+}
+.Corretor_De_Slides {
+  height: calc(35.24vw + 99px + 30px);
+}
+
+.Slide img {
+  width: 100%;
+  height: 100%;
+}
+.Botao_Slide_Anterior {
+  position: absolute;
+  left: -40vw;
+  top: -30vw;
+  width: 4vw;
+  height: 30vw;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+  font-size: 5vw;
+}
+.Botao_Proximo_Slide {
+  position: absolute;
+  right: -40vw;
+  border-radius: 0 2vw 2vw 0;
+  top: -30vw;
+  width: 4vw;
+  height: 30vw;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+  font-size: 5vw;
+}
+.Input_Tipo_Radio_Alteracao_Slide {
+  display: none;
+}
+.Navegacao_Entre_Slides {
+  position: absolute;
+  bottom: -23px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+.Barra_De_Navegacao_De_Imagem {
+  width: 0.5vw;
+  height: 0.5vh;
+  border: 0.2vw solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.4s;
+}
+.Barra_De_Navegacao_De_Imagem:hover {
+  background-color: rgb(255, 255, 255);
+}
