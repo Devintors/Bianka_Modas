@@ -905,7 +905,19 @@
   ],
   "Rodape": [
     {
-      "Imagem": "img/Rodape/Rodape.png"
+      "Imagem": "img/Rodape/Rodape.png",
+      "Redes_Sociais": [
+        {
+          "Icon": "fa-brands fa-instagram",
+          "Link": "https://www.instagram.com/bianka_modass?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+          "Cor_Do_Icone": "linear-gradient(150deg, #833AB4, #E1306C, #FD1D1D, #FCAF45)"
+        },
+        {
+          "Icon": "fa-brands fa-whatsapp",
+          "Link": "https://wa.me/5515997217784",
+          "Cor_Do_Icone": "#00e604"
+        }
+      ]
     }
   ]
 }

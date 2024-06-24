@@ -55,6 +55,23 @@
 a {
   text-decoration: none;
 }
+.rodape {
+  background-color: rgb(218, 150, 175);
+  border-color: rgb(218, 150, 175);
+}
+
+.Icones_Rodape_Redes {
+  display: flex;
+  justify-content: end;
+  padding-right: 25px;
+  width: 100%;
+  background-color: rgb(218, 150, 175);
+  border-color: rgb(218, 150, 175);
+  font-size: 50px;
+}
+.Icones_Rodape_Redes i {
+  margin: 3px 10px 3px 3px;
+}
 
 li {
   list-style: none;
