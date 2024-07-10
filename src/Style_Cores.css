@@ -1,0 +1,81 @@
+/* Pagina Home */
+:root {
+  /* Style.css */
+  --Detalhes_Pequenos: hsl(0, 0%, 29%);
+  --Titulos_Medios: hsl(0, 0%, 0%);
+  --Detalhes_Maiores: hsl(353, 100%, 41%);
+  --Bordas_De_Itens: hsl(0, 0%, 93%);
+  --Rodape_Fundo: rgb(218, 150, 175);
+  --Fundo_Do_Site_No_Body: #fde9eb;
+  --Fundo_Da_Barra_De_Rolagem: #ffb9d4;
+  --Fundo_Categorias_Em_Destaque: #fcb8b8;
+  --Borda_Imagens_De_Categoria: hsl(0, 0%, 80%);
+  --Itens_Em_Destaque_Fundo: #ffe2e2;
+
+  /* Estilo_Navbar.css */
+  --Links_Navbar_Principal: #fff;
+  --Fundo_Navbar: #d996ae;
+  --Font_Icon_E_Logo: white;
+  --Links_Navbar_Focados: #d99cac;
+  --Sub_Links_Navbar: rgb(255, 255, 255);
+  --Sub_Links_Navbar_Focados: #f2b6b6;
+
+  /* Estilo_Fita_De_Loja.css */
+  --Fundo_Da_Fita: rgb(21010, 21010, 21010);
+
+  /* Estilo_Chat_Suporte_Cliente.css */
+  --Fundo_Do_Chat: #ffe2e2; /* Utilizando a mesma cor dos itens em destaque */
+  --Borda_Do_Chat: hsl(
+    0,
+    0%,
+    80%
+  ); /* Similar à borda das imagens de categoria */
+  --Fundo_Da_Barra_De_Rolagem_Chat: #ffb9d4; /* Mesma cor da barra de rolagem do site */
+  --Fundo_Chat_Suporte_Maximizado: #d996ae; /* Cor do fundo da Navbar */
+  --Fundo_Parte_Superior_Do_Chat_Maximizado: #fcb8b8; /* Fundo das categorias em destaque */
+  --Borda_Inferior_Parte_Superior_Do_Chat_Maximizado: #ffd1e3; /* Borda de card de produto */
+  --Fonte_De_Mensagens_Do_Chat: #000; /* Mantendo o preto para legibilidade */
+  --Fundo_Mensagens_Recebidas_Do_Suporte: #f2b6b6; /* Cor similar ao sub-links focados na navbar */
+  --Fundo_Mensagens_Enviadas: #ffb9d4; /* Cor da barra de rolagem do site */
+  --Fundo_Div_De_Envio_De_Mensagem: #fde9eb; /* Fundo do site */
+  --Contorno_Da_Div_De_Envio_De_Mensagem_Quando_Focada: #d99cac;
+
+  /* Estilo_Cards.css */
+  --Fundo_Bola_De_Categoria: #ffb9d4;
+  --Borda_Da_Bola_De_Categoria: #ffb9d4;
+  --Fundo_Barra_De_Rolagem_Produtos: #ffb9d4;
+  --Rolo_Barra_De_Rolagem_Produtos: #fea0c4;
+  --Fundo_De_Card_De_Produto: rgb(255, 226, 226);
+  --Borda_De_Card_De_Produto: #ffd1e3;
+  --Fonte_Fita_De_Categoria_De_Produto: white;
+  --Fundo_Fita_De_Categoria_De_Produto: #ff4757;
+  --Nome_Do_Produto_No_Card: #ff6565;
+  --Preco_Do_Produto_No_Card: #ff6565;
+  --Fundo_De_Botao_De_Tamanho: #ff7daa;
+  --Fonte_De_Botao_De_Tamanho: #fceded;
+  --Fundo_De_Botao_De_Tamanho_Focado: #ff4888;
+  --Fonte_Tamanhos_Disponiveis: #666;
+  --Fonte_Opcoes_De_Tamanhos_Disponiveis: #333;
+  --Fundo_Opcoes_De_Tamanhos_Disponiveis: #ffbcd3;
+  --Fundo_Opcoes_De_Tamanhos_Disponiveis_Focado: #ffa3aa;
+  --Fonte_Opcoes_De_Tamanhos_Disponiveis_Focado: #fff;
+  --Fundo_Botao_De_Compra_Produtos: #ff7daa;
+  --Fonte_Botao_De_Compra_Produtos: #fff;
+  --Fundo_Botao_De_Compra_Produtos_Focado: #ff5c95;
+
+  /* Estilo_Banner_De_Slides.css */
+  --Fundo_Botao_De_Controle_Slide: rgba(255, 255, 255, 0);
+}
+
+/* Pagina Atendimento */
+:root {
+  /* Estilo_Chats_Ativos.css */
+  --Fundo_Chats_Ativos: #b25d7a; /* Cor do fundo da Navbar */
+  --Borda_Chats_Ativos: hsl(0, 0%, 29%); /* Detalhes pequenos */
+  --Fundo_Topo_Chats_Ativos: #fcb8b8; /* Fundo das categorias em destaque */
+  --Borda_Topo_Chats_Ativos: hsl(0, 0%, 29%); /* Detalhes pequenos */
+  --Fundo_Chat_Focado: #fecae974;
+
+  /* Style in element */
+  --Fundo_Chat_Ativo: #fecae9;
+}

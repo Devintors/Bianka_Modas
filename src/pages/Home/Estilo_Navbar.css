@@ -12,11 +12,6 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --black-color: hsl(220, 24%, 12%);
-  --black-color-light: hsl(220, 24%, 15%);
-  --black-color-lighten: hsl(220, 20%, 18%);
-  --white-color: #fff;
-  --body-color: hsl(220, 100%, 97%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -49,8 +44,6 @@
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-
-  background: #fde9eb;
 }
 
 ul {
@@ -66,7 +59,7 @@ a {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .nav-container {
   max-width: 1320px; /*era 1120px*/
-  background: #d996ae;
+  background: var(--Fundo_Navbar);
   margin-inline: 1.5rem;
 }
 
@@ -78,7 +71,7 @@ a {
   width: 100%;
   box-shadow: 0 2px 16px hsla(220, 32%, 8%, 0.3);
   z-index: var(--z-fixed);
-  background: #d996ae;
+  background: var(--Fundo_Navbar);
   height: 99px;
   margin-top: 30px;
 }
@@ -91,7 +84,7 @@ a {
 .nav__logo,
 .nav__burger,
 .nav__close {
-  color: white;
+  color: var(--Font_Icon_E_Logo);
   margin-left: 20px;
 }
 
@@ -153,15 +146,15 @@ a {
   }
 
   .nav__list {
-    background: #d996ae;
+    background: var(--Fundo_Navbar);
     padding-top: 3rem;
     margin-top: 2rem;
   }
 }
 
 .nav__link {
-  color: var(--white-color);
-  background: #d996ae;
+  color: var(--Links_Navbar_Principal);
+  background: var;
   font-weight: var(--font-semi-bold);
   padding: 1.25rem 1.5rem;
   display: flex;
@@ -171,7 +164,7 @@ a {
 }
 
 .nav__link:hover {
-  background: #d99cac;
+  background: var(--Links_Navbar_Focados);
 }
 
 /* Show menu */
@@ -205,14 +198,14 @@ a {
 .dropdown__link,
 .dropdown__sublink {
   padding: 1.25rem 1.25rem 1.25rem 2.5rem;
-  background: #d996ae;
+  background: var(--Fundo_Navbar);
   display: flex;
   align-items: center;
   column-gap: 0.5rem;
   font-weight: var(--font-semi-bold);
   transition: background-color 0.3s;
   margin-left: -30px;
-  color: rgb(255, 255, 255);
+  color: var(--Sub_Links_Navbar);
 }
 
 .dropdown__link i,
@@ -223,7 +216,7 @@ a {
 
 .dropdown__link:hover,
 .dropdown__sublink:hover {
-  background: #f2b6b6;
+  background: var(--Sub_Links_Navbar_Focados);
 }
 
 .dropdown__menu,

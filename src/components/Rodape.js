@@ -16,8 +16,6 @@ Produtos_Geral.forEach((item) => {
   Icones_Com_Link = item.Redes_Sociais;
 });
 
-console.log(Icones_Com_Link);
-
 export default function Rodape() {
   return (
     <div className="rodape">
@@ -25,7 +23,6 @@ export default function Rodape() {
       <div className="Icones_Rodape_Redes">
         {Icones_Com_Link.map((item) => {
           var Cor_Do_Icone = item.Cor_Do_Icone;
-          console.log(Cor_Do_Icone);
 
           return (
             <i

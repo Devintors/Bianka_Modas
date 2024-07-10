@@ -4,6 +4,7 @@ import "./Estilo_Navbar.css";
 import "./Estilo_Cards.css";
 import "./Estilo_Banner_De_Slides.css";
 import "./Estilo_Fita_De_Loja.css";
+import "./Estilo_Chat_Suporte_Cliente.css";
 //#endregion
 
 //#region Importação de Componentes
@@ -13,6 +14,7 @@ import Categorias from "../../components/Categorias";
 import Destaques from "../../components/Destaques";
 import Esposicao_De_Produtos from "../../components/Esposicao_De_Produtos";
 import Rodape from "../../components/Rodape";
+import Chat_Suporte_Cliente from "../../components/Chat_Suporte_Cliente";
 //#endregion
 
 export default function HomePage() {
@@ -29,6 +31,7 @@ export default function HomePage() {
         </div>
       </div>
       <Rodape />
+      <Chat_Suporte_Cliente />
     </div>
   );
 }

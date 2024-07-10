@@ -15,7 +15,7 @@
   height: 85px;
   margin-left: 20px;
   border-radius: 50%;
-  background-color: #ffb9d4;
+  background-color: var(--Fundo_Bola_De_Categoria);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,17 +27,17 @@
   height: 100%;
   object-fit: cover; /* Garante que a imagem cubra toda a área da div */
   border-radius: 50%; /* Garante que a imagem também seja circular */
-  border: solid #ffb9d4 8px;
+  border: 8px solid var(--Borda_Da_Bola_De_Categoria);
 }
 
 ::-webkit-scrollbar {
-  background-color: #ffb9d4;
+  background-color: var(--Fundo_Barra_De_Rolagem_Produtos);
   height: 5px;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #fea0c4;
+  background-color: var(--Rolo_Barra_De_Rolagem_Produtos);
   padding: 0;
   border-radius: 10px;
 }
@@ -46,19 +46,13 @@
   padding: 0;
 }
 
-body::-webkit-scrollbar {
-  background-color: #fea0c4;
-  height: 5px;
-  border-radius: 0;
-}
-
 /* Estilos para telas maiores que 700px */
 .product-card {
   position: relative;
   width: 260px;
-  background: rgb(255, 226, 226);
+  background: var(--Fundo_De_Card_De_Produto);
   border-radius: 15px;
-  border: solid #ffd1e3 6px;
+  border: 6px solid var(--Borda_De_Card_De_Produto);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: 20px;
@@ -80,14 +74,14 @@ body::-webkit-scrollbar {
 .ribbon span {
   font-size: 11px;
   font-weight: bold;
-  color: #fff;
+  color: var(--Fonte_Fita_De_Categoria_De_Produto);
   text-transform: uppercase;
   text-align: center;
   line-height: 20px;
   transform: rotate(-45deg);
   width: 130px;
   display: block;
-  background: #ff4757;
+  background: var(--Fundo_Fita_De_Categoria_De_Produto);
   position: absolute;
   top: 19px;
   left: -35px;
@@ -117,14 +111,14 @@ body::-webkit-scrollbar {
 
 .product-content h2 {
   font-size: 20px;
-  color: #ff6565;
+  color: var(--Nome_Do_Produto_No_Card);
   margin-bottom: 10px;
   font-weight: 800;
 }
 
 .price {
   font-size: 16px;
-  color: #ff6565;
+  color: var(--Preco_Do_Produto_No_Card);
   margin-bottom: 10px;
   font-weight: 800;
 }
@@ -134,8 +128,8 @@ body::-webkit-scrollbar {
 }
 
 .size-guide .show-sizes-btn {
-  background-color: #ff7daa;
-  color: #fceded;
+  background-color: var(--Fundo_De_Botao_De_Tamanho);
+  color: var(--Fonte_De_Botao_De_Tamanho);
   font-weight: 600;
   border: none;
   border-radius: 50%;
@@ -148,7 +142,7 @@ body::-webkit-scrollbar {
 }
 
 .size-guide .show-sizes-btn:hover {
-  background-color: #ff7daa;
+  background-color: var(--Fundo_De_Botao_De_Tamanho_Focado);
 }
 
 .size-guide .sizes-list {
@@ -157,7 +151,7 @@ body::-webkit-scrollbar {
 
 .size-guide .sizes-list p {
   font-size: 14px;
-  color: #666;
+  color: var(--Fonte_Tamanhos_Disponiveis);
   margin-bottom: 5px;
 }
 
@@ -170,23 +164,23 @@ body::-webkit-scrollbar {
 
 .size-guide .sizes-list li {
   font-size: 14px;
-  color: #333;
+  color: var(--Fonte_Opcoes_De_Tamanhos_Disponiveis);
   padding: 5px 10px;
   font-weight: 600;
-  background-color: #ffbcd3;
+  background-color: var(--Fundo_Opcoes_De_Tamanhos_Disponiveis);
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s ease, color 0.3s ease;
 }
 
 .size-guide .sizes-list li:hover {
-  background: #ffa3aa;
-  color: #fff;
+  background: var(--Fundo_Opcoes_De_Tamanhos_Disponiveis_Focado);
+  color: var(--Fonte_Opcoes_De_Tamanhos_Disponiveis_Focado);
 }
 
 .buy-btn {
-  background-color: #ff7daa;
-  color: #fff;
+  background-color: var(--Fundo_Botao_De_Compra_Produtos);
+  color: var(--Fonte_Botao_De_Compra_Produtos);
   border: none;
   border-radius: 25px;
   padding: 9px 15px;
@@ -197,7 +191,7 @@ body::-webkit-scrollbar {
 }
 
 .buy-btn:hover {
-  background-color: #ff5c95;
+  background-color: var(--Fundo_Botao_De_Compra_Produtos_Focado);
 }
 
 /* Center buttons */
@@ -209,24 +203,6 @@ body::-webkit-scrollbar {
 
 .size-guide .show-sizes-btn {
   margin: 0 auto;
-}
-
-/* Notification Styles */
-.notification {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #ff8e8e;
-  color: #fff;
-  padding: 15px;
-  border-radius: 5px;
-  opacity: 0;
-  transition: opacity 0.5s ease, bottom 0.5s ease;
-}
-
-.notification.show {
-  opacity: 1;
-  bottom: 30px;
 }
 
 .Conjunto_Categoria {
@@ -273,9 +249,8 @@ body::-webkit-scrollbar {
   .product-card {
     position: relative;
     width: 120px; /* Reduzido significativamente */
-    background: rgb(255, 226, 226);
     border-radius: 10px;
-    border: solid #ffb9d4 4px;
+    border-width: 4px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: 10px; /* Reduzido para melhor ajuste em telas menores */
@@ -301,14 +276,12 @@ body::-webkit-scrollbar {
   .ribbon span {
     font-size: 8px;
     font-weight: bold;
-    color: #fff;
     text-transform: uppercase;
     text-align: center;
     line-height: 16px;
     transform: rotate(-45deg);
     width: 80px;
     display: block;
-    background: #ff4757;
     position: absolute;
     top: 12px;
     left: -20px;
@@ -336,14 +309,12 @@ body::-webkit-scrollbar {
 
   .product-content h2 {
     font-size: 12px; /* Reduzido significativamente */
-    color: #ff6565;
     margin-bottom: 6px;
     font-weight: 800;
   }
 
   .price {
     font-size: 10px; /* Reduzido significativamente */
-    color: #ff6565;
     margin-bottom: 6px;
     font-weight: 800;
   }
@@ -353,8 +324,6 @@ body::-webkit-scrollbar {
   }
 
   .size-guide .show-sizes-btn {
-    background-color: #ff7daa;
-    color: #fceded;
     font-weight: 600;
     border: none;
     border-radius: 50%;
@@ -366,17 +335,12 @@ body::-webkit-scrollbar {
     margin-bottom: 5px;
   }
 
-  .size-guide .show-sizes-btn:hover {
-    background-color: #ff7daa;
-  }
-
   .size-guide .sizes-list {
     display: none;
   }
 
   .size-guide .sizes-list p {
     font-size: 10px; /* Reduzido significativamente */
-    color: #666;
     margin-bottom: 5px;
   }
 
@@ -389,23 +353,14 @@ body::-webkit-scrollbar {
 
   .size-guide .sizes-list li {
     font-size: 10px; /* Reduzido significativamente */
-    color: #333;
     padding: 4px 8px; /* Reduzido significativamente */
     font-weight: 600;
-    background-color: #ffbcd3;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease, color 0.3s ease;
   }
 
-  .size-guide .sizes-list li:hover {
-    background: #ffa3aa;
-    color: #fff;
-  }
-
   .buy-btn {
-    background-color: #ff7daa;
-    color: #fff;
     border: none;
     border-radius: 20px; /* Reduzido para melhor ajuste */
     padding: 5px 8px; /* Reduzido significativamente */
@@ -413,10 +368,6 @@ body::-webkit-scrollbar {
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease;
     width: 100%;
-  }
-
-  .buy-btn:hover {
-    background-color: #ff5c95;
   }
 
   /* Center buttons */
