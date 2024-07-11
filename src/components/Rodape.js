@@ -30,12 +30,13 @@ export default function Rodape() {
               onClick={() => {
                 window.open(item.Link, "_blank");
               }}
+              key={Cor_Do_Icone + item.Icon}
               style={
                 item.Cor_Do_Icone
                   ? {
                       color: "transparent",
                       background: item.Cor_Do_Icone,
-                      webkitBackgroundClip: "text",
+                      WebkitBackgroundClip: "text",
                       fontWeight: "bold",
                     }
                   : {}

@@ -45,6 +45,14 @@ export default function Chat_Suporte_Cliente() {
   //#endregion
 
   //#region useEffect
+  // useEffect(() => {
+  //   if (socket) {
+  //     socket.on("Suporte_Estado", (data) => {
+  //       setSuporte_Ativo(data.Estado_Suporte);
+  //     });
+  //   }
+  // }, []);
+
   useEffect(() => {
     if (socket) {
       socket.on("receive_message", (data) => {
@@ -81,7 +89,11 @@ export default function Chat_Suporte_Cliente() {
   //#region __ Conexão
   const Ativar_Conexao_Com_Servidor = async () => {
     socket_conexao = await io.connect(
-      "https://zvfmwc2c-3001.brs.devtunnels.ms/"
+      // "https://zvfmwc2c-3001.brs.devtunnels.ms/"
+      "https://biankamodas-server.onrender.com/",
+      {
+        transports: ["websocket", "polling", "flashsocket"],
+      }
     );
   };
   //#endregion __
@@ -93,11 +105,15 @@ export default function Chat_Suporte_Cliente() {
 
       await Ativar_Conexao_Com_Servidor();
 
-      socket_conexao.emit("Validar_Estado_De_Servidor");
-
       socket_conexao.on("Suporte_Estado", (data) => {
         setSuporte_Ativo(data.Estado_Suporte);
+
+        if (!data.Estado_Suporte) {
+          setChat_De_Suporte_Estado(false);
+        }
       });
+
+      socket_conexao.emit("Validar_Estado_De_Servidor");
 
       setSocket(socket_conexao);
     }
@@ -221,7 +237,7 @@ export default function Chat_Suporte_Cliente() {
           <p>Suporte {Suporte_Ativo ? "Online" : "Offline"}</p>
 
           <span
-            class="material-symbols-outlined"
+            className="material-symbols-outlined"
             style={Suporte_Ativo ? { color: "green" } : { color: "red" }}
           >
             radio_button_checked

@@ -38,9 +38,6 @@ export default function Chats_Ativos(Atributos) {
         item[Atributos.Chat_Aberto_Atual]
       );
 
-      //   console.log(item[Atributos.Chat_Aberto_Atual]);
-      console.log(item[Atributos.Chat_Aberto_Atual]);
-
       for (var i = 0; i < Ids_De_Chats.length; i++) {
         var Contagem_De_Repeticoes = 1;
         item[Ids_De_Chats[i]].map((sub_item) => {
@@ -49,8 +46,6 @@ export default function Chats_Ativos(Atributos) {
           } else {
             Contagem_De_Repeticoes++;
           }
-
-          console.log(sub_item);
         });
 
         setConfiguraoes_De_Chat_Ao_Lado(Chats_Configurados);
@@ -79,9 +74,8 @@ export default function Chats_Ativos(Atributos) {
 
       Socket.on("Bloqueio_De_Resgate", (data) => {
         if (data.Bloqueio_De_Resgate) {
-          //   alert("Ja a um atendente conectado");
-          //   Navigate("/");
-          window.location.reload();
+          alert("Ja a um atendente conectado");
+          Navigate("/");
         }
       });
 
@@ -101,7 +95,6 @@ export default function Chats_Ativos(Atributos) {
             //#endregion __
 
             if (item[data.authorId]) {
-              console.log("Ja foi recebida uma mensagem dele");
               Objeto_Temporario_Para_Armazenar[data.authorId] = [
                 ...item[data.authorId],
                 data,

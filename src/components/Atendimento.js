@@ -24,17 +24,23 @@ export default function Atendimento() {
     Ativar_Conexao_Com_Servidor();
   }, []);
 
-  useEffect(() => {
-    console.log(Mensagens_Do_Chat_Aberto);
-  }, [Mensagens_Do_Chat_Aberto]);
   //#endregion
 
   //#region Servidor
   //#region __ Conexão
   const Ativar_Conexao_Com_Servidor = async () => {
     socket_conexao = await io.connect(
-      "https://zvfmwc2c-3001.brs.devtunnels.ms/"
+      // "https://zvfmwc2c-3001.brs.devtunnels.ms/"
+      "https://biankamodas-server.onrender.com/",
+      {
+        transports: ["websocket", "polling", "flashsocket"],
+        forceBase64: true,
+      }
     );
+
+    socket_conexao.on("connect_error", (error) => {
+      console.log(error);
+    });
 
     setSocket(socket_conexao);
   };

@@ -35,8 +35,6 @@ export default function Chat_Atual(Atributos) {
   }, [Mensagen_Do_Chat_Selecionado]);
   //#endregion
 
-  console.log(Mensagen_Do_Chat_Selecionado);
-
   return (
     <div className="Chat_Atual_Selecionado">
       <div className="Mensagens_Do_Chat">
